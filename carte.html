@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Accueil</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style carte.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,28 +11,45 @@
 <body>
     <header id="main-header">
         <div id="left">
-            <a href="index.html"><img src="logo_blanc.png" alt="Accueil" class="img-fluid" id="logo"></a>
+            <a href="index.html"><img src="/Logo/logo_blanc.png" alt="Accueil" class="img-fluid" id="logo"></a>
         </div>
         <div id="right">
             <a href="menu.html" id="menu">A la carte</a>
             <a href="carte.html" id="map">Nous Trouver</a>
-            <a href="login.html" id="login">Se connecter</a>
+            <a href="infos.html" id="login">Informations</a>
         </div>
     </header>  
     <main id="main">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 id="Find">Nous trouver</h1 >
-                    
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102311.16597480878!2d2.5675248986488737!3d50.50368624884216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd231eab4dd22d%3A0x9610c3a8de27e0f5!2s1%20Dom.%20de%20la%20Chartreuse%2C%2062113%20Verquigneul!5e0!3m2!1sfr!2sfr!4v1742402193466!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="maps"></iframe>
-            </div>
+        <div id ="namepage">
+            <h1 id="page_title">Pizz'Alain</h1>
         </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <iframe id="carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102311.16597480878!2d2.5675248986488737!3d50.50368624884216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd231eab4dd22d%3A0x9610c3a8de27e0f5!2s1%20Dom.%20de%20la%20Chartreuse%2C%2062113%20Verquigneul!5e0!3m2!1sfr!2sfr!4v1742402193466!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="maps"></iframe>
+                </div>
+                <div class="col-md-6 text-right" >
+                    <h2 id="titre"><strong>Nous Trouver :</strong></h2>
+                    <div id="texte">
+                    <p> <strong>Adresse :</strong> 1 domaine de la Chartreuse, 62113, Verquigneul</p>
+                    <p> <strong>Horaires d'ouverture :</strong></p>
+                    <ul>
+                        <li>Lundi - Vendredi : 11h00 - 22h00</li>
+                        <li>Samedi : 12h00 - 23h00</li>
+                        <li>Dimanche : Fermé</li>
+                    </ul>
+                    <p> <strong>Téléphone :</strong> 01 23 45 67 89</p>
+                    <p> <strong>Email : </strong> contact@pizzalain.fr</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
     </main>
     <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-12" >
-                    <p>© 2025 Pizz'Alain</p>
+                    <p>© 2025 Pizz'Alain - Tous droits réservés - Powered by Alexis BODDAERT</p>
                 </div>
             </div>
         </div>
